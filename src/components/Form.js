@@ -29,6 +29,8 @@ const Form = (callback) => {
 					{ SITUATIONS.map((descr, i) => <option value={ i } key={ i }>{ descr.short }</option>) }
 				</select>
 
+				<canvas></canvas>
+
 				<p className='text-justify my-4'>
 					Ce formulaire est là pour vous aider dans la production de vos documents, mais il ne vous dispense en aucun cas d'appliquer les directives en vigueur. Les forces de l'ordre sont seules à même de juger de la légitimité de vos déplacements. Soyez raisonnables, restez chez vous dans la mesure du possible, ne sortez qu'en cas d'absolue nécessité et lavez-vous les mains régulièrement.
 				</p>

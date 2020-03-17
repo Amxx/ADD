@@ -1,7 +1,6 @@
 import React from 'react';
-import SITUATIONS from '../config/situations';
 
-const signature = 'https://upload.wikimedia.org/wikipedia/commons/9/93/Signature_of_Professor_Muhammad_Yunus.svg';
+import SITUATIONS from '../config/situations';
 
 const today = () => {
 	let
@@ -16,7 +15,7 @@ const today = () => {
 	return [day, month, year].join('/');
 }
 
-const View = (state) =>
+const View = (state, signature) =>
 	<div className='container d-flex flex-column justify-content-center'>
 		<h2 className='text-center'>Attestation de déplacement dérogatoire</h2>
 		<p className='text-justify m-3'>En application de l’article 1<sup>er</sup> du décret du 16 mars 2020 portant réglementation des déplacements dans le cadre de la lutte contre la propagation du virus SARS-CoV-2&nbsp;:</p>

@@ -18,3 +18,9 @@ table td
 {
 	font-weight: 400 !important;
 }
+
+canvas
+{
+	border: 1px solid rgb(206, 212, 218);
+	border-radius: 4px;
+}
