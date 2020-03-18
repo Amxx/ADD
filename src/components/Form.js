@@ -1,15 +1,17 @@
 import React from 'react';
 import SITUATIONS from '../config/situations';
 
-const Form = (callback) => {
+const Form = (props) => {
+
 	const handleSubmit = (ev) => {
 		ev.preventDefault()
-		callback({
+
+		props.callback({
 			name:      ev.target.name.value,
 			birth:     ev.target.birth.value,
 			address:   ev.target.address.value,
 			city:      ev.target.city.value,
-			situation: Number(ev.target.situation.value),
+			situation: ev.target.situation.value,
 		})
 	}
 
@@ -29,7 +31,10 @@ const Form = (callback) => {
 					{ SITUATIONS.map((descr, i) => <option value={ i } key={ i }>{ descr.short }</option>) }
 				</select>
 
-				<canvas></canvas>
+				<span id='signature-pad'>
+					<canvas></canvas>
+					<a href='#' className='fas fa-trash-alt text-muted' onClick={ props.clear }/>
+				</span>
 
 				<p className='text-justify my-4'>
 					Ce formulaire est là pour vous aider dans la production de vos documents, mais il ne vous dispense en aucun cas d'appliquer les directives en vigueur. Les forces de l'ordre sont seules à même de juger de la légitimité de vos déplacements. Soyez raisonnables, restez chez vous dans la mesure du possible, ne sortez qu'en cas d'absolue nécessité et lavez-vous les mains régulièrement.

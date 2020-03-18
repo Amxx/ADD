@@ -24,3 +24,9 @@ canvas
 	border: 1px solid rgb(206, 212, 218);
 	border-radius: 4px;
 }
+
+#signature-pad a
+{
+	width: 0;
+	transform: translate(-1.25em,-.5em);
+}
