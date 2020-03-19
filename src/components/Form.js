@@ -42,7 +42,7 @@ const Form = (props) => {
 				</p>
 
 				<p className='text-justify my-4'>
-					<small>Cette application est respectueuse de votre vie privée : les informations que vous indiquez restent sur votre appareil. Le code source est <a href="">disponible sur Github</a> et la présente version est stockée sur IPFS. Vous pouvez (1) <a href = "https://app.ens.domains/name/sortir.eth">vérifier à cette page</a> (section "CONTENT") que le nom de domaine "sortir.eth" (https://sortir.eth.link) redirige effectivement vers l'emprunte numérique de l'application, et (2) en vérifier le contenu au pixel près.</small>
+					<small>Cette application est respectueuse de votre vie privée : les informations que vous indiquez restent sur votre appareil. Le code source est <a href="">disponible sur Github</a> et la présente version est stockée de façon distribuée sur <a href = "https://ipfs.io/">IPFS</a>. Vous pouvez <a href = "https://app.ens.domains/name/sortir.eth">vérifier à cette page</a> (section "CONTENT") que le nom de domaine "sortir.eth" (https://sortir.eth.link) redirige effectivement vers l'emprunte numérique de l'application dont le contenu de chaque fichier qui la constitue est également vérifiable.</small>
 				</p>
 
 				<div className='form-check my-4'>
