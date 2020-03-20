@@ -37,7 +37,7 @@ const App = () => {
 		LocalForage.getItem('0x953779c43301b023-sign', (value, err) => (err ? null : value)).then(data => {
 			sigpad.fromDataURL(data)
 		})
-		// initialize signature pad
+		// store signature pad
 		setSignature(sigpad)
 	}, []);
 

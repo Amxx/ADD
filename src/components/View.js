@@ -3,16 +3,19 @@ import React from 'react';
 import SITUATIONS from '../config/situations';
 
 const today = () => {
-	let
-	date  = new Date(),
-	month = '' + (date.getMonth() + 1),
-	day   = '' + date.getDate(),
-	year  = date.getFullYear();
 
-	if (month.length < 2) month = '0' + month;
-	if (day.length   < 2) day   = '0' + day;
+	// let
+	// date  = new Date(),
+	// month = '' + (date.getMonth() + 1),
+	// day   = '' + date.getDate(),
+	// year  = date.getFullYear();
+	//
+	// if (month.length < 2) month = '0' + month;
+	// if (day.length   < 2) day   = '0' + day;
+	//
+	// return [day, month, year].join('/');
 
-	return [day, month, year].join('/');
+	return (new Date()).toLocaleString();
 }
 
 const View = (props) =>
